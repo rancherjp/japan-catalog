@@ -1,0 +1,7 @@
+name: Mackerel
+description: |
+  Docker image for mackerel-agent
+version: "rancher-0.41.2"
+category: Monitoring
+maintainer: "Naoki Aoyama <github@homesoc.tokyo>"
+license:  "Apache License v2.0"
