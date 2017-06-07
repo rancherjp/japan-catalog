@@ -522,6 +522,13 @@
       - 10.0.31
       - 5.5.56
 
+    - variable: "DB_ROOT_PASSWORD"
+      label: "DB ROOT password"
+      description: "DB ROOT password"
+      required: true
+      type: "password"
+      default: "password"
+
     - variable: "DB_TYPE"
       label: "DB type"
       description: "DB type"

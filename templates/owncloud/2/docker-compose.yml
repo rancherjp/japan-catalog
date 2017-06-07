@@ -9,5 +9,4 @@ services:
   mysql:
     image: mariadb:${MARIADB_VERSION}
     environment:
-      MYSQL_ROOT_PASSWORD: "${MARIADB_PASSWORD}"
-
+      MYSQL_ROOT_PASSWORD: "${DB_ROOT_PASSWORD}"
