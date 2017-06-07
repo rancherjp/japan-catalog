@@ -1,15 +1,15 @@
 .catalog:
   name: "Mackerel"
-  version: "rancher-0.41.1"
+  version: "0.41.1-rancher"
   description: "Docker image for mackerel-agent"
-  uuid: mackerel-agent-0.41.1
-  minimum_rancher_version: v1.4.1
+  uuid: "mackerel-agent-0.41.1"
+  minimum_rancher_version: "v1.4.1"
   questions:
     - variable: "MACKEREL_API_KEY"
       label: "Mackerel API Key"
       description: "Your Mackerel API Key"
       required: true
-      type: "string"
+      type: "password"
     - variable: ENABLE_DOCKER_PLUGIN
       label: "Enable Docker Plugin"
       description: "Enable Docker Plugin"
