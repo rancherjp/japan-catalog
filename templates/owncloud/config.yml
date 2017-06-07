@@ -1,0 +1,5 @@
+name: "ownCloud"
+description: " A safe home for all your data."
+version: "9.1-rancher"
+category: "ownCloud"
+maintainer: "Naoki Aoyama <github@homesoc.tokyo>"

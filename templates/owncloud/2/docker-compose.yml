@@ -1,0 +1,13 @@
+version: '2'
+services:
+
+  owncloud:
+    image: owncloud:8.1
+    ports:
+      - ${PORT}:80
+
+  mysql:
+    image: mariadb:${MARIADB_VERSION}
+    environment:
+      MYSQL_ROOT_PASSWORD: "${MARIADB_PASSWORD}"
+

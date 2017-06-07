@@ -1,0 +1,37 @@
+.catalog:
+  name: "ownCloud"
+  version: "8.2-rancher"
+  description: "A safe home for all your data."
+  uuid: "owncloud-8.2-rancher"
+  minimum_rancher_version: "v1.4.1"
+  questions:
+    - variable: "PORT"
+      label: "public port"
+      description: "public port"
+      required: true
+      type: "int"
+      default: "80"
+
+    - variable: "MARIADB_VERSION"
+      label: "MariaDB version"
+      description: "MariaDB version"
+      required: true
+      type: "enum"
+      default: "10.1.24"
+      options:
+      - 10.3
+      - 10.2.6
+      - 10.1.24
+      - 10.0.31
+      - 5.5.56
+
+    - variable: "MARIADB_PASSWORD"
+      label: "MariaBD password"
+      description: "MariaBD password"
+      required: true
+      type: "password"
+      default: "password"
+
+owncloud:
+
+
