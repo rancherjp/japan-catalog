@@ -25,9 +25,9 @@
       - 10.0.31
       - 5.5.56
 
-    - variable: "MARIADB_PASSWORD"
-      label: "MariaBD password"
-      description: "MariaBD password"
+    - variable: "DB_ROOT_PASSWORD"
+      label: "MariaDB ROOT password"
+      description: "MAriaDB password"
       required: true
       type: "password"
       default: "password"
