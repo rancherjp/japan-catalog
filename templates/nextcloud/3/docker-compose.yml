@@ -32,6 +32,7 @@ services:
     - /nextcloud/themes
     labels:
       io.rancher.container.hostname_override: container_name
+      io.rancher.container.pull_image: always
 
   # If using MySQL
   nextcloud-db:
@@ -45,6 +46,7 @@ services:
       MYSQL_PASSWORD: "${DB_PASSWORD}"
     labels:
       io.rancher.container.hostname_override: container_name
+      io.rancher.container.pull_image: always
 
   # If using Redis
   redis:
@@ -54,3 +56,4 @@ services:
     - /var/lib/mysql
     labels:
       io.rancher.container.hostname_override: container_name
+      io.rancher.container.pull_image: always

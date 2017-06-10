@@ -5,8 +5,14 @@ services:
     image: owncloud:8.1
     ports:
       - ${PORT}:80
+    labels:
+      io.rancher.container.hostname_override: container_name
+      io.rancher.container.pull_image: always
 
   mysql:
     image: mariadb:${MARIADB_VERSION}
     environment:
       MYSQL_ROOT_PASSWORD: "${DB_ROOT_PASSWORD}"
+    labels:
+      io.rancher.container.hostname_override: container_name
+      io.rancher.container.pull_image: always
