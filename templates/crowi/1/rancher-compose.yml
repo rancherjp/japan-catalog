@@ -1,8 +1,8 @@
 .catalog:
   name: "Crowi"
-  version: "v1.5.1-rancher"
+  version: "v1.5.3-rancher"
   description: "The Simple & Powerful Communication Tool Based on Wiki"
-  uuid: "crowi-v1.5.1-rancher"
+  uuid: "crowi-v1.5.3-rancher"
   minimum_rancher_version: "v1.4.1"
   questions:
 

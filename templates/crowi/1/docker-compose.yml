@@ -2,7 +2,7 @@ version: '2'
 services:
 
   crowi:
-    image: bakudankun/crowi:latest
+    image: bakudankun/crowi:1.5.3
     links:
       - mongo:db
       - redis:redis
