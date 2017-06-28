@@ -1,0 +1,35 @@
+.catalog:
+  name: "HackMD"
+  version: "0.5.1-rancher"
+  description: "Realtime collaborative markdown notes on all platforms."
+  uuid: "hackmd-0.5.1-rancher"
+  minimum_rancher_version: "v1.4.1"
+  questions:
+
+    - variable: "HTTP_PORT"
+      label: "HTTP Port"
+      description: "HTTP Port"
+      required: true
+      type: "int"
+      default: "80"
+
+    - variable: "POSTGRES_USER"
+      label: "Postgres User"
+      description: "Postgres User"
+      required: true
+      type: "string"
+      default: "hackmd"
+
+    - variable: "POSTGRES_PASSWORD"
+      label: "Postgres Password"
+      description: "Postgres Password"
+      required: true
+      type: "string"
+      default: "hackmdpass"
+
+    - variable: "POSTGRES_DB"
+      label: "Postgres DB"
+      description: "Postgres DB"
+      required: true
+      type: "string"
+      default: "hackmd"
