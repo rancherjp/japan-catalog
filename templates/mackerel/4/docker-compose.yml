@@ -1,6 +1,15 @@
 version: '2'
 services:
 
+  volume:
+    image: busybox
+    network_mode: "none"
+    volumes:
+      - /var/lib/mackerel-agent
+    labels:
+      io.rancher.container.hostname_override: container_name
+      io.rancher.container.start_once: true
+
   agent:
     image: mackerel/mackerel-agent:0.43.2
     environment:
@@ -10,11 +19,10 @@ services:
     network_mode: "host"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
-      - agent_data:/var/lib/mackerel-agent
+    volumes_from:
+      - volume
     labels:
       io.rancher.container.hostname_override: container_name
       io.rancher.container.pull_image: always
+      io.rancher.sidekicks: volume
       io.rancher.scheduler.global: ${global_service}
-
-volumes:
-  agent_data:
