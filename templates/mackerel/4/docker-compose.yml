@@ -11,8 +11,6 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - agent_data:/var/lib/mackerel-agent
-    volumes_from:
-      - volume
     labels:
       io.rancher.container.hostname_override: container_name
       io.rancher.container.pull_image: always
