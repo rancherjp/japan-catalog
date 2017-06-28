@@ -1,0 +1,19 @@
+version: '2'
+services:
+
+  hackmd:
+    image: hackmdio/hackmd:0.5.1
+    environment:
+      - POSTGRES_USER="${POSTGRES_USER}"
+      - POSTGRES_PASSWORD="${POSTGRES_PASSWORD}"
+    links:
+      - hackmdPostgres:hackmdPostgres
+    ports:
+      - "${HTTP_PORT}:3000"
+
+  hackmdPostgres:
+    image: postgres
+    environment:
+      - POSTGRES_USER="${POSTGRES_USER}"
+      - POSTGRES_PASSWORD="${POSTGRES_PASSWORD}"
+      - POSTGRES_DB="${POSTGRES_DB}"

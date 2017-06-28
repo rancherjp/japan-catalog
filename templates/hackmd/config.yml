@@ -1,0 +1,5 @@
+name: "HackMD"
+description: "Realtime collaborative markdown notes on all platforms."
+version: "0.5.1-rancher"
+category: "notes"
+maintainer: "Naoki Aoyama <github@homesoc.tokyo>"
